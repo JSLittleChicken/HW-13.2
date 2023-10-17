@@ -26,7 +26,6 @@ button {
 }
 .dropdown-child1 {
     display: none;
-    background-color: black;
     width: 120px;
 }
 
@@ -38,6 +37,15 @@ button {
     background-color: red;
 
 }
+
+.dropdown a:hover {
+    background-color: crimson;
+}
+
+a:has(+ .dropdown-child2:hover) {
+    background-color: crimson;
+}
+
 
 .dropdown:hover .dropdown-child1 {
     display: block;
@@ -66,3 +74,6 @@ a.product2:hover + .dropdown-child2 {
 
 } 
 
+.dropdown div:hover {
+    display: block;
+}
