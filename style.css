@@ -17,7 +17,7 @@ button {
     
 }
 
-.mainbutton:hover {
+.dropdown:hover .mainbutton {
     background-color: red;
 }
 .dropdown {
